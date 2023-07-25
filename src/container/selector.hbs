@@ -1,0 +1,157 @@
+{{! 
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+ }}
+
+<div class='p-5 box'>
+
+  <h1>USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h1>
+
+  <h2 id='user'>USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h2>
+
+  <button type='button' class='button'>Купити</button>
+
+  <p class='user'>This is text</p>
+</div>
+
+<section class='p-5 box'>
+  <h1>USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h1>
+
+  <p class='user'>This is text</p>
+</section>
+
+<footer class='p-5 box'>
+  <h1>USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h1>
+
+  <p class='user'>
+    <em class='child'>Test EM</em>
+  </p>
+  <div>
+    <div>
+      <em class='child'>Test EM</em>
+    </div>
+  </div>
+</footer>
+
+<div class='card p-5 m-5 card-dark'>
+  <ul>
+    <li class='item'>First</li>
+    <p class='item'>2</p>
+    <div class='item'>3</div>
+    <article class='item'>Last</article>
+    <strong class='item'>Only of type</strong>
+    <li class='item'>First</li>
+    <p>NOT</p>
+    <div class='item'>3</div>
+    <article class='item'>Last</article>
+    <p></p>
+  </ul>
+</div>
+
+<div class='card p-5 m-5 card-dark'>
+  <ul>
+    <li class='item'>Only</li>
+  </ul>
+</div>
+
+<div class='card p-5 m-5 card-dark'>
+  <ul>
+    <li class='item'>1</li>
+    <li class='item'>NTN</li>
+    <li class='item'>3</li>
+  </ul>
+</div>
+
+<div class='card p-5 m-5 card-white'>
+  <input class='input-dark' placeholder='Hello' required />
+  <input class='input-dark' type='number' />
+</div>
+
+<div class='card p-5 m-5 card-white'>
+  <img
+    alt='image small card 100px'
+    class='small-img'
+    src='https://picsum.photos/200/300'
+    height='100px'
+  />
+  <br />
+  <a
+    href='https://picsum.photos/200/300'
+    rel='external'
+  >Link</a>
+  <br />
+  <a
+    class='btn btn-secondary'
+    href='https://picsum.photos/200/300'
+  >Click me</a>
+  <br />
+  <a
+    class='small btn btn-secondary'
+    href='https://picsum.photos/200/300'
+  >Click me</a>
+  <br />
+  <a
+    class='small btn btn-secondary big'
+    href='https://picsum.photos/200/300'
+  >Click me</a>
+  <br />
+  <button class='btn'>Click me</button>
+</div>
+<br />
+<div class='card p-5 m-5 card-white'>
+  <p class='big-text'>This is my classwork,
+    <br />
+    i hope so i can understand everything fast and clearly</p>
+</div>
+<div lang='fr' class='card p-5 m-5'>
+  <a class='link' href='#test'>Click me</a>
+</div>
+
+<div lang='en' id='test' class='card p-5 m-5'>
+  <input />
+  <span> Hello world!</span>
+  <button>Test</button>
+</div>
+
+<div class='p-5 m-5'>
+  <button>Test button</button>
+  <button disabled>Disabled button</button>
+</div>
+
+<div class='p-5 m-5'>
+  <input class='inp' />
+
+  <input class='inp' readonly />
+  <div class='mt-5'>
+    <div>
+      <input type='checkbox' checked />
+      <span>First checkbox</span>
+    </div>
+    <div>
+      <input type='checkbox' />
+      <span>Second checkbox</span>
+    </div>
+  </div>
+</div>
+
+<div class='p-5 m-5'>
+  <div>
+    <input type='email' class='valid' placeholder='test' />
+    <span>Test</span>
+  </div>
+  <div class='mt-5'>
+    <input
+      type='number'
+      min='10'
+      max='20'
+      value='0'
+      required
+      class='number'
+    />
+  </div>
+</div>
+
+{{! 
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+}}
