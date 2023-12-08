@@ -154,6 +154,7 @@ transition-duration: 1s;
 }
 
 .info_title {
+	padding-top: 36px;
 	font-size: 56px;
 	color: var(--color-title);
 	font-weight: var(--weight-title);
