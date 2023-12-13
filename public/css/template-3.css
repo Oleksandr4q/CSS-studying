@@ -1,3 +1,26 @@
+@import '/css/var.css';
+
+@font-face {
+	font-family: 'Segment';
+	src: url(/font/Segment-Regular);
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Segment';
+	src: url(/font/Segment-SemiBold);
+	font-weight: 600;
+}
+
+
+@layer main, component, style;
+
+@layer secondary {
+	.card_button {
+		background: red;
+	}
+}
+
 @keyframes fly {
 	from {
 		top:0;
@@ -25,30 +48,6 @@
 
 		background: purple;
 	}
-}
-:root {
-	--space-m: 12px;
-	--space-xm: 16px;
-	--space-l: 24px;
-	--space-b: 36px;
-
-	--size-s: 14px;
-	--size-d: 16px;
-	--size-m: 20px;
-	--size-l: 24px;
-
-	--color-border: #DEE2E6;
-	--color-primary: rgb(46, 46, 246);
-	--color-white: #ffffff;
-	--color-title: #212529;
-	--color-text: #343a40;
-
-	--border-radius: 12px;
-
-	--weight-title: 500;
-	--weight-text: 400;
-
-	--page-width : 960px;
 }
 
 /* =======================*/
@@ -244,12 +243,12 @@ transition-duration: 1s;
 
 	transition: opacity 1s, background-color 1s;
 }
-
+@layer main {
 .card_button {
 	color: var(--color-white);
 	background-color: var(--color-primary);
 }
-
+}
 .button:hover {
 	opacity: 0.7;
 	background-color: yellow;
@@ -386,4 +385,81 @@ body:hover .modal {
 .input {
 	caret-color: red;
 	border: 1 px solid var(--color-title);
+}
+
+.blog {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+@media all and (max-width: 800px) {
+	.blog {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media all and (600px < width <=800px) {
+	.blog {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media all and (width <= 600px) {
+	.blog {
+		grid-template-columns: 1fr;
+	}
+}
+
+.form {
+	gap: var(--space-l);
+}
+
+@media all and (width <= 560px) {
+	.form {
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	.form_info {
+		max-width: 300px;
+		width: 100%;
+		line-height: 150%;
+	}
+
+	.form_content {
+		align-items: center;
+		text-align: center;
+	}
+}
+
+.hero_container {
+	container-type: inline-size;
+	container-name: hero;
+
+}
+
+@container hero (width < 960px) {
+	.hero {
+		flex-direction: column;
+	}
+};
+
+.card_button {
+	background: red; 
+}
+
+/* .test {
+	position: absolute;
+	background: red;
+	top: 0;
+	left: 0;
+
+	height: 100vmin;
+	width: 100vmin;
+	z-index: 9999;
+} */
+
+.hero_title {
+	font-size: 5cqw;
 }

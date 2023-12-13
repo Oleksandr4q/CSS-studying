@@ -11,7 +11,8 @@
 	  		</nav>
     </header>
 
-		{{#with hero}}
+			{{#with hero}}
+	<div class="hero_container">
 		<div class="hero">
 			<div class="hero_content">
 				<h1 class="hero_title">{{title}}</h1>
@@ -23,17 +24,19 @@
 				<div class="hero_slider_icon hero_slider_right">{{right}}</div>
 			</div>
 		</div>
+	</div>
 		{{/with}}
 
-			<input type="text" class="input">-
 
-			<div class="modal">
+			{{!-- <input type="text" class="input"> --}}
+
+			{{!-- <div class="modal">
 
 				{{hero.text}} {{hero.text}}
 
 			<div class="modal_text">{{hero.text}} {{hero.text}}</div>
 
-			</div>
+			</div> --}}
 
 		<main class="blog">
 			{{#each blog}}
@@ -80,3 +83,5 @@
 		{{/each}}
 	</div>
 	</footer>
+
+	<div class="test">Test</div>
